@@ -73,9 +73,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
             Uri uri = Uri.parse("http://202.119.207.100:8080/Self");    //设置跳转的网站
-
-
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         }

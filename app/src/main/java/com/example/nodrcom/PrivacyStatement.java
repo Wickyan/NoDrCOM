@@ -15,6 +15,7 @@ public class PrivacyStatement extends AppCompatActivity {
         setContentView(R.layout.activity_privacy_statement);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        new myClass().fullScreen(this);//设置透明状态栏
 
 
     }

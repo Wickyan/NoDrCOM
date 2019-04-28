@@ -20,7 +20,7 @@
         <TableRow>
 
             <TextView
-                android:text="学号:"
+                android:text="     学号:"
                 android:textSize="8pt"/>
 
             <EditText
@@ -35,7 +35,7 @@
 
             <TextView
                 android:id="@+id/textView1"
-                android:text="密码:"
+                android:text="     密码:"
                 android:textSize="8pt"/>
 
             <EditText
@@ -55,7 +55,7 @@
                 android:layout_marginTop="20px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="运营商:"
+                android:text="    运营商:"
                 android:textSize="8pt"/>
 
             <RadioGroup

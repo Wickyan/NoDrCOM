@@ -37,6 +37,7 @@ public class ConFig extends AppCompatActivity {
         cucc = (RadioButton) findViewById(R.id.cucc);
         ctcc = (RadioButton) findViewById(R.id.ctcc);
 
+        new myClass().fullScreen(this);//设置透明状态栏
 
         SharedPreferences sPreferences=getSharedPreferences("config", MODE_PRIVATE);
         String username1=sPreferences.getString("username", "");
@@ -47,8 +48,8 @@ public class ConFig extends AppCompatActivity {
         password.setText(password1);
 
         if(net1.equals("cmcc")) cmcc.setChecked(true);
-        else if(net1.equals("cucc")) cucc.setChecked(true);
-        else if(net1.equals("ctcc")) ctcc.setChecked(true);
+        else if(net1.equals("unicom")) cucc.setChecked(true);
+        else if(net1.equals("telecom")) ctcc.setChecked(true);
 
 
         resetbtn.setOnClickListener(new View.OnClickListener() {
@@ -70,13 +71,13 @@ public class ConFig extends AppCompatActivity {
                 String s2 = password.getText().toString();
                 String s3 = "";
                 if(cmcc.isChecked()) s3 = "cmcc";
-                else if(cucc.isChecked()) s3 = "cucc";
-                else if(ctcc.isChecked()) s3 = "ctcc";
+                else if(cucc.isChecked()) s3 = "unicom";
+                else if(ctcc.isChecked()) s3 = "telecom";
               //  String s3 = netred.getTag().toString();
                 myClass m = new myClass();
                 boolean i = m.saveUserInfo(ConFig.this,s1,s2,s3);
                 if(i) {
-                    Toast.makeText(ConFig.this,"保存成功，密码为：" +s2,Toast.LENGTH_LONG).show();
+                    Toast.makeText(ConFig.this,"保存成功，密码为" +s2 ,Toast.LENGTH_LONG).show();
                     finish();
                 }
                 else{
