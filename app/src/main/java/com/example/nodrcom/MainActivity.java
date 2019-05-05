@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity
 
         String ss = "http://10.2.5.251:801/eportal/?c=Portal&a=login&callback=dr1556283953377&login_method=1&user_account="
                 + username +"%40" + net +"&user_password=" + password +"&wlan_user_ip=" + ip
-              + "&wlan_user_mac=AE1D0D5D2AC8&wlan_ac_ip=&wlan_ac_name=BRAS&jsVersion=3.0&_=1556283905606\n";
+              + "&wlan_user_mac=000000000000&wlan_ac_ip=&wlan_ac_name=BRAS&jsVersion=3.0&_=1556283905606\n";
        Uri uri = Uri.parse(ss);    //设置跳转的网站
 
 
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity
 
         String ss = "http://10.2.5.251:801/eportal/?c=Portal&a=logout&callback=dr1556284127322&login_method=1&user_account=drcom&user_password=123&ac_logout=0&wlan_user_ip="
                 + ip +
-                "&wlan_user_ipv6=&wlan_vlan_id=0&wlan_user_mac=F48E38EF321F&wlan_ac_ip=&wlan_ac_name=BRAS&jsVersion=3.0&_=1556284124928";
+                "&wlan_user_ipv6=&wlan_vlan_id=0&wlan_user_mac=000000000000&wlan_ac_ip=&wlan_ac_name=BRAS&jsVersion=3.0&_=1556284124928";
         Uri uri = Uri.parse(ss);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
