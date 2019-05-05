@@ -8,4 +8,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_con_fig">设置账号</string>
     <string name="title_activity_privacy_statement">PrivacyStatement</string>
+    <string name="title_activity_help">使用说明</string>
+    <string name="using">1.连接CUMT_stu的wifi\n\n2.点击右下角设置按钮进入设置界面\n\n3.点击保存并退回主界面\n\n 4.点击登录\n\nPS：跳转网页显认证成功则成功，\n  ------否则失败。\n ------主界面右上角可进入管理界面。\n\n\n\n</string>
+
 </resources>
