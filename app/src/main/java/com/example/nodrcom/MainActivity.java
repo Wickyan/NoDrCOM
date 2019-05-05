@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity
         String ss = "http://10.2.5.251:801/eportal/?c=Portal&a=login&callback=dr1556283953377&login_method=1&user_account="
                 + username +"%40" + net +"&user_password=" + password +"&wlan_user_ip=" + ip
               + "&wlan_user_mac=000000000000&wlan_ac_ip=&wlan_ac_name=BRAS&jsVersion=3.0&_=1556283905606\n";
-       Uri uri = Uri.parse(ss);    //设置跳转的网站
+       Uri uri = Uri.parse(ss);     //设置跳转的网站
 
 
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
