@@ -97,7 +97,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
-
+            Uri uri = Uri.parse("https://github.com/Wickyan/NoDrCOM/issues");    //设置跳转的网站
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         } else if (id == R.id.nav_send) {
 
             startActivity(new Intent(MainActivity.this,PrivacyStatement.class));
